@@ -1,0 +1,72 @@
+/*
+Change the Size of the photos used and the Style margin, padding and positioning of the Slider itself.
+
+
+
+
+*/
+
+
+.container {
+
+    width: 100%;
+    height: 50%;
+    margin: 3rem;
+    padding: 2rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.first-image {
+
+    height: 100%;
+    width: 100% ;
+
+
+}
+.second-image {
+
+    height: 100%;
+    width: 100%;
+
+
+}
+.third-image {
+
+    height: 100%;
+    width: 100%;
+
+}
+
+.text-center h3 p {
+
+margin: 0;
+padding: 0;
+
+text-align: center;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translateX(-50%) translateY(-50%);
+
+
+}
+
+.carousel.caption {
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+
+}
