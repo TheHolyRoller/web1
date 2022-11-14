@@ -1,7 +1,7 @@
 .carousel {
     display: flex;
     height: 5050px;
-    width: 100%;
+    width: 6000px;
     max-width: 1100px;
   }
 
@@ -88,7 +88,16 @@
 
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    /* This is a breaking change you may have to change things TO MARGIN AUTO again. This could be potentially remedied by
+    Wrapping the other container divs but this could cause havoc with the margins layout and spacing of the other components within the Carousel itself.
+
+    You could give a top margin of some rem space or pixels or even just percentage or numbers
+    Exercise Caution though as this could also be a breaking change.
+
+    */
     margin: auto;
+    top: 6rem;
+
     position: relative;
 
 

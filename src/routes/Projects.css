@@ -1,0 +1,45 @@
+.Apps {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    background: black;
+    margin: auto;
+
+
+  }
+.nav {
+
+    position: relative;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .9);
+
+}
+
+
+.foot {
+
+height: 0%;
+width: 100%;
+background-color: rgba(0, 0, 0, .9);
+
+
+}
+
+  /* Adding an extra class that contains all the different elements rendered could mess things up. The problem is that things need
+  to be given more space. Just how this is accomplished in the Home file. So we need to change things up
+   */
+
+
+
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, .9);
+
+  }

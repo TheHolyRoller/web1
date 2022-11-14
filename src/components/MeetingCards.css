@@ -1,7 +1,17 @@
 .meetings {
     width: 100%;
     padding: 6rem 1rem;
-    background-color: #000;
+    background-color: rgba(0,0,0,.8);
+
+
+
+}
+.pricing {
+
+    background: rgba(0,0,0,.8);
+    background-color: rgba(0, 0, 0, .8);
+    margin: 0px;
+
 }
 
 .card-container {
@@ -10,17 +20,28 @@
     display: grid;
     grid-gap: 40px;
     grid-template-columns: repeat(3, 1fr);
+    background-color: rgba(0,0,0,.8);
+    background: rgba(0,0,0,.8) ;
+
 }
 
 .card-container .card {
-    border: 1px solid #eee;
-    color: #eee;
+    border: 1px solid slategrey;
+
+
+    color: rgba(0,0,0,.8);
+    background-color: rgba(0,0,0, .4);
+
 }
 
 .card {
     text-align: center;
     padding: 1rem;
+    background-color: rgba(0,0,0,.8);
+
+
 }
+
 
 .card:hover {
     background-color: #141414;
@@ -36,12 +57,15 @@
     width: 10%;
     margin: 1.5rem auto;
     display: block;
+    background-color: rgba(0,0,0,.8);
+
 }
 
 .card .btc {
     font-size: 4rem;
     font-weight: 600;
     padding: 1rem;
+
 }
 
 .meetings p {
@@ -56,10 +80,20 @@
     margin: 2rem auto;
 }
 
+
+.astro {
+    height: 100px;
+}
+.IMG    {
+    height: 100px;
+}
+
 @media screen and (max-width: 980px) {
     .card-container {
         max-width: 90%;
         margin: auto;
         grid-template-columns: 1fr;
+
+
     }
 }

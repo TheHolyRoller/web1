@@ -1,0 +1,102 @@
+.weeklyservices {
+    width: 100%;
+    margin: 3rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+
+
+
+}
+.training {
+
+background-color: rgba(0, 0, 0, .8);
+height: 100%;
+width: 100%;
+margin: 0px;
+}
+
+
+.weeklyservices .left {
+    text-align: center;
+    margin: absolute;
+    padding: 1rem 4rem;
+    max-width: 600px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20rem;
+    background-color: rgba(0,0,0,.8);
+
+}
+.iframe {
+
+    padding: 1rem;
+    margin: 2rem;
+    background-color:rgba(0, 0, 0, .8);
+    height: 100%;
+    width: 100%;
+
+
+
+}
+
+.weeklyservices .left p {
+    /* Change things to the commented out section if things go wrong*/
+   /**  margin: 1.2rem 0; */
+    position: absolute;
+    top: 0;
+    margin: 0 auto;
+
+}
+
+.weeklyservices .right {
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.right .img-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /* position: relative; */
+    /* align-items: center;
+    text-align: center; */
+    place-items: center;
+    padding-left: 20rem;
+    background-color: rgba(0,0,0,.8);
+
+
+}
+
+.right .img {
+    max-width: 60%;
+    border: 1px solid #333;
+
+}
+
+.right .top {
+    grid-column: 1 / span 8;
+    grid-row: 1;
+    padding-top: 20%;
+    z-index: 6;
+}
+
+.right .bottom {
+    grid-column: 4/ -1;
+    grid-row: 1;
+    z-index: 5;
+    background-color: darkblue;
+}
+
+@media screen and (max-width: 1140px) {
+    .weeklyservices {
+        grid-template-columns: 1fr;
+
+    }
+
+    .weeklyservices .img {
+        max-width: 80%;
+    }
+
+}

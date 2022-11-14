@@ -20,16 +20,17 @@ const Navbar = () => {
 
     return (
         <div className={color ? 'header header-bg' : 'header'}>
-           <Link exact to='/'><h1>WaKeley Ministries</h1></Link>
+        {/**Try and find out why the Main Logo Button does not Function.Written fine */}
+           <Link className='links' id="1" exact to='/'><h1>WaKeley Ministries</h1></Link>
            <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                <li>
-                   <Link to='/'>Home</Link>
+                   <Link className='links' id="2" to='/'>Home</Link>
                </li>
                <li>
-                   <Link to='/projects'>Projects</Link>
+                   <Link className='links' id="3" to='/projects'>Projects</Link>
                </li>
                <li>
-                   <Link to='/weeklyservices'>Weekly Services</Link>
+                   <Link className='links' id="4" to='/weeklyservices'>Weekly Services</Link>
                </li>
                <li>
                </li>

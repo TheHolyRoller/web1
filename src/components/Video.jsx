@@ -4,7 +4,7 @@ import './VideoStyles.css'
 
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import MeetingsCards from '../components/Meetings';
+import MeetingsCards from '../components/MeetingCards';
 
 
 import LogoImage from '../components/LogoImage';

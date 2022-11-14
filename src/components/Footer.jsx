@@ -1,6 +1,6 @@
 import React from 'react'
 import './FooterStyles.css'
-import { FaFacebook, FaLinkedin, FaMailBulk, FaPhone, FaSearchLocation, FaTwitter } from 'react-icons/fa';
+import { FaFacebook, FaLinkedin, FaMailBulk, FaPhone, FaSearchLocation, FaTwitter, FaYouTube, FaInstagram } from 'react-icons/fa';
 
 const Footer = () => {
     return (
@@ -29,8 +29,9 @@ const Footer = () => {
                     aliqua. Ut enim ad minim veniam"</p>
                     <div className='social'>
                     <a href="https://www.facebook.com/daniel.wakeley.1" > <FaFacebook size={30} style={{ color: '#ffffff', marginRight: '1rem' }}/> </a>
-                       <FaTwitter size={30} style={{ color: '#ffffff', marginRight: '1rem' }} />
-                       <FaLinkedin size={30} style={{ color: '#ffffff', marginRight: '1rem' }} />
+                    <a href="https://www.facebook.com/daniel.wakeley.1" > <FaInstagram size={30} style={{ color: '#ffffff', marginRight: '1rem' }}/> </a>
+                    <a href="https://twitter.com/" > <FaTwitter size={30} style={{ color: '#ffffff', marginRight: '1rem' }} /> </a>
+                      <a href="https://instagram.com/">  <FaLinkedin size={30} style={{ color: '#ffffff', marginRight: '1rem' }} /> </a>
                     </div>
                 </div>
 
