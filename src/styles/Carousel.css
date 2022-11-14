@@ -1,0 +1,175 @@
+.carousel {
+    display: flex;
+    height: 5050px;
+    width: 100%;
+    max-width: 1100px;
+  }
+
+  .carousel_wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .carousel_card {
+    display: flex;
+    flex: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.8);
+    transition: 0.5s ease-in-out;
+  }
+
+  .carousel_card-active {
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: visible;
+  }
+
+  .card_image {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .card_overlay {
+    position: relative;
+    /* Remove These modifications later */
+    /* the Problem with the title and the photo is the two are not overlapping and one will not go over the other. As a
+    Result there needs to be some adjustments for them to share the same column and Row in order for them to overlap and one to go over the
+    other.
+    */
+
+    /* Keep these Variables */
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    padding: 40px 30px;
+    align-items: flex-end;
+  }
+
+  .card_title {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 49%;
+    left: 45%;
+    right: -50%;
+    translate: (-50% -50%);
+
+
+
+  }
+
+  /*
+  So in order to fix the positioning of things we need to change two things.
+  The div containing the image and the div containing the text that is contained within the div that contains the image. This way
+  we can move the div that holds the h1 tag contains the title of the image within the current active image. This current active image
+  holds the wrapper class div as well as the div that contains the image itself. Within that div that contains the image there is another div
+  that holds the text div for the image's title.
+  So in order to adjust things we need to give the image div the right properties and a grid layout then give the image and title div the
+  same rows and columns to overlap each other.
+
+
+
+
+  */
+  /* The main overall container where we need to set the grid layout*/
+
+  .carousel_wrapper {
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: auto;
+    position: relative;
+
+
+
+
+
+  }
+
+  /* The one div where we need to give it the position that overlapps with the title div> */
+  .card_image {
+
+    grid-column: 1 / 3;
+    position: absolute;
+
+
+  }
+
+
+  /* The <div container where we move the text around
+   */
+.card_overlay {
+
+  grid-column: 2 / -1;
+  grid-row: 1 / 2;
+  /* the position absolute will give the div free reign and will mean that it is not bound to the natural
+  layout of the container. This way we can move around the positioning to place it where we want.
+
+  */
+  position: absolute;
+
+
+}
+
+
+
+  .carousel_arrow_left,
+  .carousel_arrow_right {
+    position: absolute;
+    font-size: 40px;
+    top: 50%;
+    transform: translate(0, -50%);
+    background-color: gainsboro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding-bottom: 7px;
+    cursor: pointer;
+  }
+
+  .carousel_arrow_left {
+    left: 15px;
+  }
+
+  .carousel_arrow_right {
+    right: 15px;
+  }
+
+  .carousel_pagination {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  .pagination_dot {
+    height: 10px;
+    width: 10px;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  .pagination_dot:hover {
+    transform: scale(1.2);
+  }
+
+  .pagination_dot-active {
+    background-color: steelblue;
+  }

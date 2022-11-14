@@ -1,7 +1,9 @@
-import React from 'react'
-import './WeeklyServicesStyles.css'
+import React from 'react';
+import './WeeklyServicesStyles.css';
+import Meetings from './Meetings';
 
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
+
 
 //Import the Videos Here
 import Youtube from '../assets/Waterfall.mp4';
@@ -20,6 +22,9 @@ const WeeklyServices = () => {
             <div className='left'>
                 <h1>WeeklyServices</h1>
                 <p>The lives we've seen transformed by the Good News of the Gospel</p>
+                <div className='meetingContainer'>
+                <Meetings/>
+                </div>
                 <Link to='/contact'><button className='btn'>Contact</button></Link>
             </div>
             <div className='right'>
