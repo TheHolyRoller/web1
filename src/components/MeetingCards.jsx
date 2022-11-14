@@ -1,9 +1,7 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
 import './MeetingCards.css';
 
-import { FaFacebook, FaLinkedin, FaMailBulk, FaPhone, FaSearchLocation, FaTwitter, FaYoutube, FaInstagram } from 'react-icons/fa';
-import YouTubeService from './YouTubeService';
+import { FaFacebook, FaYoutube, FaInstagram } from 'react-icons/fa';
 
 const MeetingCards = () => {
     return (
@@ -11,7 +9,7 @@ const MeetingCards = () => {
             <div className='card-container'>
                 <div className='card'>
                 {/* Add in the Photos here with the card class  */}
-                <img src="/images/frostyMnt.jpg"/>
+                <img src="/images/frostyMnt.jpg" alt=""/>
 
                     <span className='bar'></span>
                     {/**Add in the Text here  */}
@@ -22,7 +20,7 @@ const MeetingCards = () => {
                 </div>
                 <div className='card'>
                 {/** Photo */}
-                <img src="/images/frostyMnt.jpg"/>
+                <img src="/images/frostyMnt.jpg" alt=""/>
                     <span className='bar'></span>
 
                     {/**Add in the Text here  */}
@@ -34,7 +32,7 @@ const MeetingCards = () => {
                 </div>
                 <div className='card'>
                 {/** Photo */}
-                <img src="/images/frostyMnt.jpg"/>
+                <img src="/images/frostyMnt.jpg" alt=""/>
 
                     <span className='bar'></span>
                     {/**Add in the Text here  */}
